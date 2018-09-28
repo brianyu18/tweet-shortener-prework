@@ -63,6 +63,3 @@ def shortened_tweet_truncator(tweet)
   end
 end
   
-    
-  nuarr.join (" ")
-# Write your code here.
