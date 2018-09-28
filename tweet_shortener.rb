@@ -35,6 +35,7 @@ def word_substituter(tweet)
 
   arr = tweet.split
   puts wordz
+  puts arr
   arr.each_with_index do |word, idx|
     if wordz.include? (word)
       arr[idx] = dictionary[word]
