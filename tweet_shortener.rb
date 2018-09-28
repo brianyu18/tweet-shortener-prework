@@ -32,11 +32,12 @@ end
 
 def word_substituter(tweet)
   wordz = dictionary.keys
+  dic = dictionary
 
   arr = tweet.split
   arr.each_with_index do |word, idx|
     if wordz.include? (word)
-      arr[idx] = dictionary[word]
+      arr[idx] = dic[word]
     end
   end
   return arr.join (" ")
