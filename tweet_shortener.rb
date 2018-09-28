@@ -44,9 +44,9 @@ end
 
 def bulk_tweet_shortener(array_tweets)
   array_tweets.each do |check|
-    run = word_substituter(check)
+    run_func = word_substituter(check)
   end
-  run
+  run_func
 end
 
 def selective_tweet_shortener(tweet)
