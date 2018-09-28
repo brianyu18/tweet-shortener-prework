@@ -39,6 +39,7 @@ def word_substituter(tweet)
       arr[idx] = dictionary[word]
     end
   end
+  puts arr.join (" ")
   return arr.join (" ")
 end
 
