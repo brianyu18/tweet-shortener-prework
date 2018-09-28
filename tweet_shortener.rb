@@ -34,14 +34,11 @@ def word_substituter(tweet)
   wordz = dictionary.keys
 
   arr = tweet.split
-  p wordz
-  p arr
   arr.each_with_index do |word, idx|
     if wordz.include? (word)
       arr[idx] = dictionary[word]
     end
   end
-  puts arr.join (" ")
   return arr.join (" ")
 end
 
